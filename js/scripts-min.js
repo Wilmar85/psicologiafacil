@@ -1,0 +1,1 @@
+"use strict";var togglemenu=document.getElementById("toggle-menu"),sidebar=document.getElementById("asidebar");togglemenu.addEventListener("click",(function(e){"toggle-menu"!=e.target.id&&"toggle-menu"!=e.target.parentElement.id||(sidebar.classList.toggle("show"),togglemenu.classList.toggle("show"))}));
