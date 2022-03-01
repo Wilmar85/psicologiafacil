@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css?t=1644636039748"><script src="https://kit.fontawesome.com/2944ae47ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css?t=1645855899322"><script src="https://kit.fontawesome.com/2944ae47ac.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body> 
     <header class="header" id="header"><a class="logo" href=""><img src="./assets/img/logo.png" alt="logo"></a>
-      <div class="topbar">
-        <div class="topbar__icon"><i class="fa fa-user"></i><span>Log in</span></div>
-        <div class="topbar__icon"> <i class="fa fa-user-plus"></i><span>Register</span></div>
+      <div class="topbar" id="topbar">
+        <div class="topbar__icon" data-type="login"><i class="fa fa-user"></i><span>Login</span></div>
+        <div class="topbar__icon" data-type="register"> <i class="fa fa-user-plus"></i><span>Register</span></div>
         <div class="toggle-menu">
           <div class="toggle-menu__icon" id="toggle-menu">
             <div class="first-bar"></div>
@@ -26,14 +26,52 @@
         <ul class="main-menu" id="main-menu">
           <li class="main-menu__item"><a class="main-menu__link" href="/">home</a>
           </li>
-          <li class="main-menu__item"><a class="main-menu__link" href="/abount.html">abount</a>
+          <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="/abount.html">abount</a>
           </li>
           <li class="main-menu__item"><a class="main-menu__link" href="/contac.html">contac</a>
           </li>
         </ul>
       </nav>
     </div>
-    <main class="main"></main>
-    <script src="js/scripts-min.js?t=1644636039748"> </script>
+    <main class="main">
+      <h1 class="title">Abount</h1>
+      <h1>en creacion</h1>
+    </main>
+    <div class="lightbox" id="login-modal">
+      <form class="form" id="login-form">
+        <div class="form__field">
+          <label class="form__label" for="login-email">Email </label>
+          <input class="form__input" type="email" name="email" id="login-email">
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="login-password">Password </label>
+          <input class="form__input" type="password" name="password" id="login-password">
+        </div>
+        <div class="form__field">
+          <input class="form__submit" type="submit" name="button" value="Send">
+        </div>
+      </form>
+    </div>
+    <!--contenedor modal de toda la ventana-->
+    <div class="lightbox" id="register-modal"> 
+      <form class="form" id="register-form">
+        <div class="form__field"> 
+          <label class="form__label" for="register-email">Email </label>
+          <input class="form__input" id="register-email" type="email" name="email">
+        </div>
+        <div class="form__field"> 
+          <label class="form__label" for="register-password">Passoword </label>
+          <input class="form__input" id="register-password" type="password" name="password">
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="register-password-2">Repeat Passoword </label>
+          <input class="form__input" id="register-password-2" type="password" name="password-2">
+        </div>
+        <div class="form__field form__buttons">
+          <input class="button form__submit" type="submit" name="button" value="Send">
+        </div>
+      </form>
+    </div>
+    <script src="js/scripts-min.js?t=1645855899322"> </script>
   </body>
 </html>
